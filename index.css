@@ -1,0 +1,226 @@
+:root
+{
+   
+/* --Family: [Manrope] */
+/* - Weights: 500, 700 */
+
+--family:Manrope;
+
+    /* Colors */
+
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+
+}
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+
+    padding:2em 1.3em;
+    font-family: var(--family);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: var(--Light-Grayish-Blue);
+
+}
+
+main{
+
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+   display: flex;
+   flex-direction: column;
+}
+
+
+
+.drawers{
+
+    width: 100%;
+}
+
+.p-container{
+
+    padding: 1.7em;
+}
+
+.dark-p
+{
+
+    margin: revert;
+font-weight: 700;
+font-size: 1.1rem;
+
+}
+
+.light-p{
+
+font-size: 0.9rem;
+font-weight: 500;
+margin: revert;
+color: var(--Grayish-Blue);
+
+}
+
+
+
+.avatar
+{
+
+width: 2em;
+height: 2em;
+margin-right: 15px;
+border-radius: 100%;
+
+}
+
+
+
+.sharing-container{
+
+    background-color: white;
+    position: relative;
+    padding: 1em 1.7em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.fa-share{
+
+    background-color: var(--Desaturated-Dark-Blue);
+    padding: 0.5em;
+    border-radius: 100%;
+    opacity: 0.8;
+    color: white;
+
+}
+
+.avatar-container{
+
+    display: flex;
+
+}
+
+.avatar-container p{
+
+    margin: 0;
+    font-size: 0.7rem;
+
+}
+
+.icon-container{
+
+    position: absolute;
+    background-color: var(--Very-Dark-Grayish-Blue);
+    visibility: hidden;
+    align-items: center;
+    padding: 0 1em;
+    color: white;
+    border-radius: 7px;
+    top: 14px;
+    left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon-container p{
+
+    font-size: 0.8rem;
+    font-weight: 100;
+    letter-spacing: 0.4em;
+    color: var(--Grayish-Blue);
+
+}
+.icon-container i{
+
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0.6em;
+}
+
+
+
+
+@media(min-width:668px)
+{
+
+
+main{
+
+    flex-direction: row;
+    max-width: 40em;
+    align-items: center;
+    border-radius:0 ;
+    overflow: visible;
+}
+
+
+.drawers{
+
+    width: 50%;
+}
+
+.p-container{
+
+    padding: 0 1em 0 1em;
+}
+
+.sharing-container{
+
+    padding: 0 1em;
+}
+
+
+}
+
+
+.desktop-version{
+   top: -70px;
+    left: auto;
+    right: -16px;
+}
+
+.desktop-version::after{
+
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: inherit;
+    position: absolute;
+    bottom: -10px;
+    left: 70%;
+    transform: rotate(45deg);
+}
+
+
+.attribution {
+     font-size: 11px;
+      text-align: center; 
+    }
+
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
