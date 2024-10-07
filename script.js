@@ -10,7 +10,7 @@ shareElement.addEventListener('click',() =>{
 
         iconContainer.classList.remove("desktop-version")
 
-    if(avatarContainer.style.visibility!=="visible"){
+    if(iconContainer.style.visibility!=="hidden"){
         withoutShare();       
 
     }
@@ -27,7 +27,6 @@ shareElement.addEventListener('click',() =>{
             
             iconContainer.style.visibility='hidden';
             
-    
         }
         else{
             iconContainer.style.visibility='visible';
